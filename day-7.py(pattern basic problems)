@@ -1,0 +1,168 @@
+n=5                      
+print("****\n"*n)
+--------------------------
+n = 4
+for i in range(1, n+1):
+    print("* " * i)
+  --------------------
+⭐ 1. Simple Star Pattern
+*
+*
+*
+*
+n = 4
+for i in range(n):
+    print("*")
+⭐ 2. Square Pattern
+* * * *
+* * * *
+* * * *
+* * * *
+n = 4
+for i in range(n):
+    for j in range(n):
+        print("*", end=" ")
+    print()
+⭐ 3. Right Triangle
+*
+* *
+* * *
+* * * *
+n = 4
+for i in range(1, n+1):
+    print("* " * i)
+⭐ 4. Inverted Triangle
+* * * *
+* * *
+* *
+*
+n = 4
+for i in range(n, 0, -1):
+    print("* " * i)
+⭐ 5. Right Aligned Triangle
+   *
+  **
+ ***
+****
+n = 4
+for i in range(1, n+1):
+    print(" "*(n-i) + "*"*i)
+⭐ 6. Pyramid Pattern
+   *
+  * *
+ * * *
+* * * *
+n = 4
+for i in range(1, n+1):
+    print(" "*(n-i), end="")
+    for j in range(i):
+        print("* ", end="")
+    print()
+⭐ 7. Inverted Pyramid
+* * * *
+ * * *
+  * *
+   *
+n = 4
+for i in range(n,0,-1):
+    print(" "*(n-i) + "* "*i)
+⭐ 8. Diamond Pattern
+   *
+  * *
+ * * *
+* * * *
+ * * *
+  * *
+   *
+n = 4
+
+for i in range(1, n+1):
+    print(" "*(n-i) + "* "*i)
+
+for i in range(n-1, 0, -1):
+    print(" "*(n-i) + "* "*i)
+🔢 9. Number Triangle
+1
+1 2
+1 2 3
+1 2 3 4
+n = 4
+
+for i in range(1, n+1):
+    for j in range(1, i+1):
+        print(j, end=" ")
+    print()
+🔢 10. Same Number Pattern
+1
+2 2
+3 3 3
+4 4 4 4
+n = 4
+
+for i in range(1, n+1):
+    print((str(i) + " ") * i)
+🔢 11. Floyd’s Triangle
+1
+2 3
+4 5 6
+7 8 9 10
+n = 4
+num = 1
+
+for i in range(1, n+1):
+    for j in range(i):
+        print(num, end=" ")
+        num += 1
+    print()
+🔤 12. Alphabet Pattern
+A
+A B
+A B C
+A B C D
+n = 4
+
+for i in range(n):
+    for j in range(i+1):
+        print(chr(65+j), end=" ")
+    print()
+🔤 13. Reverse Alphabet Pattern
+A B C D
+A B C
+A B
+A
+n = 4
+
+for i in range(n,0,-1):
+    for j in range(i):
+        print(chr(65+j), end=" ")
+    print()
+⭐ 14. Hollow Square
+* * * *
+*     *
+*     *
+* * * *
+n = 4
+
+for i in range(n):
+    for j in range(n):
+        if i==0 or i==n-1 or j==0 or j==n-1:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+⭐ 15. Hollow Pyramid
+   *
+  * *
+ *   *
+*******
+n = 4
+
+for i in range(1, n+1):
+    for j in range(1, 2*n):
+        if j == n-i+1 or j == n+i-1 or i == n:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
+
+✅ Best order to practice patterns
